@@ -27,6 +27,8 @@ async function getData() {
 export default async function Home() {
   const data = await getData();
 
+  console.log(data);
+
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col font-[family-name:var(--font-hahmlet)] w-full sm:max-w-[450px]">
