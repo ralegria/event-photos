@@ -3,7 +3,7 @@ import UploadSection from "./components/UploadSection";
 
 async function getData() {
   const res = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/by_asset_folder?asset_folder=${process.env.NEXT_PUBLIC_CLOUDINARY_ASSETS_FOLDER}&tags=true&metadata=true`,
+    `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/by_asset_folder?asset_folder=${process.env.NEXT_PUBLIC_CLOUDINARY_ASSETS_FOLDER}&tags=true&metadata=true&max_results=500&resource_type=image`,
 
     {
       cache: "no-store",
